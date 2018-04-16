@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+<div class="title">
+    <h1>search results for <span>"<%=  @the_book  %>"</span></h1>
+</div>
+
+<div id="search_results">
+    <ul class="results_list">
+        <% @books.each do |key, value| %>
+            <li class="result">
+                <img class="thumbnail" src="<%=  key.image_link(:zoom => 5)  %>"/>
+                <div class="text">
+                    <h3 class="book_title"><%=  key.title  %></h3>
+                    <p class="description"><%=  key.description  %></p>
+                    <p class="authors"><%=  key.authors  %></p>
+                    <p class="link"> <a href="<%=  key.info_link  %>" target="blank"><%=  key.info_link  %></a></p>
+                </div>
+            </li>
+        <% end %>
+    </ul>
+</div>
+
+</body>
+<html>
+

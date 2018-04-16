@@ -1,0 +1,92 @@
+
+body {
+    font-family: 'Lato', 'sans-serif'
+}
+
+
+/* form styles */
+
+#form_div {
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 50%;
+    transform: translateX(-250px);
+    text-align: center;
+}
+
+.input {
+    width: 500px;
+    height: 55px;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-size: 1.5em;
+}
+
+.submit {
+    width: 200px;
+    padding: 40px;
+    margin-top: 50px; 
+}
+
+
+
+/* result styles */
+
+.title h1 {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.title h1 span {
+    color: red;
+}
+
+#search_results {
+    width: 90%;
+    margin: 0 auto;
+    background: rgb(238, 237, 237); 
+    border-radius: 25px;
+}
+
+.results_list {
+    list-style: none;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.result {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: flex-start;
+
+    padding: 10px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 25px;
+}
+
+.thumbnail {
+    display: inline-block;
+    left:25px;
+    margin: 25px;
+}
+
+.text {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.description {
+    font-size: .85em;
+    color: #666;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: .85em;
+}
